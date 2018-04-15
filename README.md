@@ -57,7 +57,7 @@ Features
 #### Mined blocks explorer
 * Mined blocks table with block status (pending, confirmed, and orphaned)
 * Blocks luck (shares/difficulty) statistics
-* Universal blocks and transactions explorer based on [chainradar.com](http://chainradar.com)
+* Universal blocks and transactions explorer based on [explorer.stellite.cash](https://explorer.stellite.cash)
 
 #### Smart payment processing
 * Splintered transactions to deal with max transaction size
