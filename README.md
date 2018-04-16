@@ -1,3 +1,7 @@
+Minor fork version of cryptonote-stellite-pool used by http://pool.pocketwhale.info/solace
+
+Everything below this point was left unchanged from the original developer of cryptonote-stellite-pool (donation addresses are not mine)
+
 cryptonote-stellite-pool
 ======================
 
