@@ -174,13 +174,21 @@
 
 <!-- Pool Charts -->
 <div class="row">
-    <div class="col-sm-6 poolChart">
+<div class="col-sm-6 poolChart">
+        <h4>Hash/USD <span data-toggle="tooltip" data-placement="top" data-original-title="Reward * Rate / Difficulty"><i class="fa fa-question-circle"></i></span></h4>
+<div id="chartHashUsd" data-chart="profit">
+            <div class="chart"></div>
+        </div>
+    </div>
+
+<div class="col-sm-6 poolChart">
         <h4>Hashrate</h4>
         <div id="chartHashrate" data-chart="hashrate">
             <div class="chart"></div>
         </div>        
     </div>
-    <div class="col-sm-6 poolChart">
+
+        <div class="col-sm-6 poolChart">
         <h4>Difficulty</h4>
         <div id="chartDifficulty" data-chart="diff">
             <div class="chart"></div>
