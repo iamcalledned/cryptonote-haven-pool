@@ -90,11 +90,10 @@
         </tr>
         <tr class="appConfig">
             <td colspan="5">
-                <span>Example config.txt (replace the relevant lines):</span><br/>        
+                <span>Example pool.txt (replace the relevant lines):</span><br/>
                 <div class="config">
-                "pool_address": "<span class="exampleHost"></span>:<span class="examplePort"></span>",<br/>
-                "wallet_address": "<span class="exampleLogin">YOUR_WALLET_ADDRESS</span>",<br/>
-                "pool_password": "<span class="examplePassword">YOUR_WORKER_NAME"</span>,</div>
+				{"pool_address" : "<span class="exampleHost"></span>:<span class="examplePort"></span>", "wallet_address" : "<span class="exampleLogin">YOUR_WALLET_ADDRESS</span>", "rig_id" : "", "pool_password" : "<span class="examplePassword">YOUR_WORKER_NAME"</span>", "use_nicehash" : false, "use_tls" : false, "tls_fingerprint" : "", "pool_weight" : 1 },<br/>
+				"currency" : "sumokoin"</div>
             </td>
         </tr>
         <tr class="appInfo">
@@ -120,76 +119,29 @@
         </tr>
         <tr class="appConfig">
             <td colspan="5">
-                <span>Example config.txt (replace the relevant lines):</span><br/>        
+                <span>Example config.json (replace the relevant lines):</span><br/>        
                 <div class="config">
+				"algo": "heavy",<br/>
                 "url": "<span class="exampleHost"></span>:<span class="examplePort"></span>",<br/>
                 "user": "<span class="exampleLogin">YOUR_WALLET_ADDRESS</span>",<br/>
                 "pass": "<span class="examplePassword">YOUR_WORKER_NAME</span>",</div>
             </td>
         </tr>
         <tr class="appInfo">
-            <td class="miningAppTitle">CPUMiner-multi</td>
-            <td>CPU</td>
-            <td><a target="_blank" href="https://github.com/tpruvot/cpuminer-multi/releases">Releases</a></td>
-            <td><a target="_blank" href="https://github.com/tpruvot/cpuminer-multi/issues">Issues</a></td>
-            <td><a target="_blank" href="https://github.com/tpruvot/cpuminer-multi">Github</a></td>
-        </tr>
-        <tr class="appConfig">
-            <td colspan="5">
-                <span>Example:</span>
-                <code>minerd -a cryptonight -o stratum+tcp://<span class="exampleHost"></span>:<span class="examplePort"></span> -u <span class="exampleLogin">YOUR_WALLET_ADDRESS</span> -p <span class="examplePassword">YOUR_WORKER_NAME</span></code>
-            </td>
-        </tr>
-        <tr class="appInfo">
-            <td class="miningAppTitle">ccminer (forked by tsiv)</td>
-            <td>CUDA (Nvidia)</td>
-            <td><a target="_blank" href="https://github.com/tsiv/ccminer-cryptonight/releases">Releases</a></td>
-            <td><a target="_blank" href="https://bitcointalk.org/index.php?topic=656841.msg7487737#msg7487737">BitcoinTalk</a></td>
-            <td><a target="_blank" href="https://github.com/tsiv/ccminer-cryptonight">Github</a></td>
-        </tr>
-        <tr class="appConfig">
-            <td colspan="5">
-                <span>Example:</span>
-                <code>ccminer -o stratum+tcp://<span class="exampleHost"></span>:<span class="examplePort"></span> -u <span class="exampleLogin">YOUR_WALLET_ADDRESS</span> -p <span class="examplePassword">YOUR_WORKER_NAME</span></code>
-            </td>
-        </tr>
-        <tr class="appInfo">
-            <td class="miningAppTitle">YAM Miner (by yvg1900)</td>
-            <td>CPU</td>
-            <td><a target="_blank" href="https://mega.co.nz/#F!UlkU0RyR!E8n4CFkqVu0WoOnsJnQkSg">MEGA</a></td>
-            <td><a target="_blank" href="https://twitter.com/yvg1900">Twitter</a></td>
-            <td>Proprietary <i class="fa fa-frown-o"></i></td>
-        </tr>
-        <tr class="appConfig">
-            <td colspan="5">
-                <span>Example:</span>
-                <code>yam -c x -M stratum+tcp://<span class="exampleLogin">YOUR_WALLET_ADDRESS</span>:<span class="examplePassword">YOUR_WORKER_NAME</span>@<span class="exampleHost"></span>:<span class="examplePort"></span>/xmr</code>
-            </td>
-        </tr>
-        <tr class="appInfo">
-            <td class="miningAppTitle">Claymore CPU Miner</td>
-            <td>CPU</td>
-            <td><a target="_blank" href="https://bitcointalk.org/index.php?topic=647251.0">BitcoinTalk</a></td>
-            <td><a target="_blank" href="https://bitcointalk.org/index.php?topic=647251.0">BitcoinTalk</a></td>
-            <td>Proprietary <i class="fa fa-frown-o"></i></td>
-        </tr>
-        <tr class="appConfig">
-            <td colspan="5">
-                <span>Example:</span>
-                <code>NsCpuCNMiner64 -o stratum+tcp://<span class="exampleHost"></span>:<span class="examplePort"></span> -u <span class="exampleLogin">YOUR_WALLET_ADDRESS</span> -p <span class="examplePassword">YOUR_WORKER_NAME</span></code>
-            </td>
-        </tr>
-        <tr class="appInfo">
-            <td class="miningAppTitle">Claymore GPU Miner</td>
+            <td class="miningAppTitle">SRBMiner Cryptonight AMD GPU Miner</td>
             <td>OpenCL (AMD)</td>
-            <td><a target="_blank" href="https://bitcointalk.org/index.php?topic=638915.0">BitcoinTalk</a></td>
-            <td><a target="_blank" href="https://bitcointalk.org/index.php?topic=638915.0">BitcoinTalk</a></td>
+            <td><a target="_blank" href="https://bitcointalk.org/index.php?topic=3167363.0">BitcoinTalk</a></td>
+            <td><a target="_blank" href="https://bitcointalk.org/index.php?topic=3167363.0">BitcoinTalk</a></td>
             <td>Proprietary <i class="fa fa-frown-o"></i></td>
         </tr>
         <tr class="appConfig">
             <td colspan="5">
-                <span>Example:</span>
-                <code>NsGpuCNMiner -o stratum+tcp://<span class="exampleHost"></span>:<span class="examplePort"></span> -u <span class="exampleLogin">YOUR_WALLET_ADDRESS</span> -p <span class="examplePassword">YOUR_WORKER_NAME</span></code>
+                <span>Example config.txt (replace the relevant lines):</span><br/>
+				<div class="config">
+				"cryptonight_type" : "heavy",<br/>
+				"pool": "<span class="exampleHost"></span>:<span class="examplePort"></span>",<br/>
+                "wallet": "<span class="exampleLogin">YOUR_WALLET_ADDRESS</span>",<br/>
+                "password": "<span class="examplePassword">YOUR_WORKER_NAME</span>",</div>                
             </td>
         </tr>
         </tbody>
