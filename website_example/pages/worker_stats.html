@@ -173,7 +173,6 @@ function fetchAddressStats(longpoll){
         },
         error: function(e){
             if (e.statusText === 'abort') return;
-            $('#addressError').text('Connection error').show();
         
             if (addressTimeout) clearTimeout(addressTimeout);
             addressTimeout = setTimeout(function(){
