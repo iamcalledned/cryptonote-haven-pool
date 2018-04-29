@@ -1,4 +1,5 @@
-Minor fork version of cryptonote-stellite-pool used by http://pool.pocketwhale.info/solace
+Minor fork version of cryptonote-stellite-pool.
+Anyone using this pool software for Solace should take a look at lib/blockUnlocker.js
 
 Everything below this point was left unchanged from the original developer of cryptonote-stellite-pool (donation addresses are not mine)
 
