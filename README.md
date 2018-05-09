@@ -1,7 +1,5 @@
 Minor fork version of cryptonote-stellite-pool.
 
-Anyone using this pool software for Solace needs to modify lib/blockUnlocker.js to account for dev/charity fee (search for comment on Solace).
-
 Everything below this point was left unchanged from the original developer of cryptonote-stellite-pool (donation addresses are not mine)
 
 cryptonote-stellite-pool
