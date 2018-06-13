@@ -35,12 +35,10 @@
                 "difficulty": 10000,
                 "desc": "Mid range hardware"
             },
-            },
             {
                 "port": 5555,
                 "difficulty": 20000,
                 "desc": "High end hardware"
-            },
             },
             {
                 "port": 6666,
