@@ -1,9 +1,9 @@
 {
-	"coin": "StelliteCoin",
-	"symbol": "XTL",
-	"coinUnits": 100,
-	"coinDifficultyTarget": 60,
-	"moneroVariant": false,
+	"coin": "Haven",
+	"symbol": "XHV",
+	"coinUnits": 1000000000000,
+	"coinDifficultyTarget": 120,
+	
 	"logging": {
 		"files": {
 			"level": "info",
@@ -12,29 +12,48 @@
 		},
 
 		"console": {
-			"level": "info",
+			"level": "debug",
 			"colors": true
 		}
 	},
 	"poolServer": {
 		"enabled": true,
 		"clusterForks": "auto",
-		"poolAddress": "Se3uv4ghkuBR2DnDZoEZBiRnd2WnmDkKyYbuTagBeNFcTMQLNZaP6HFX3HvcgUxA4ahtv8avuhXLrJoPf4TbrWWm1A63dxeLU",
-		"blockRefreshInterval": 1000,
-		"minerTimeout": 900,
-		"sslCert": "./cert.pem",
-		"sslKey": "./privkey.pem",
-		"sslCA": "./chain.pem"
+		"poolAddress": "hvxy28aJhVdSStEdCEAFkt2n6mhdiKXdriqxGcQn31PXPxuJCV31JDBdBnp1uEurp79e4tNCNKXZcSTzHD4XX8s29DfqpHYadv",
+		"blockRefreshInterval": 10,
+		"minerTimeout": 900
 	},
-	"ports": [{
-		"port": 6666,
-		"difficulty": 2000,
-		"desc": "Low end hardware"
-	}],
+	 "ports": [
+            {
+                "port": 3333,
+                "difficulty": 2000,
+                "desc": "Low end hardware"
+            },
+            
+            {
+                "port": 4444,
+                "difficulty": 10000,
+                "desc": "Mid range hardware"
+            },
+            
+            {
+                "port": 5555,
+                "difficulty": 20000,
+                "desc": "High end hardware"
+            },
+            
+            {
+                "port": 6666,
+                "difficulty": 30000,
+                "desc": "Hidden port",
+                "hidden": true
+            }
+            
+],
 
 	"varDiff": {
 		"minDiff": 100,
-		"maxDiff": 100000000,
+		"maxDiff": 100000,
 		"targetTime": 60,
 		"retargetTime": 30,
 		"variancePercent": 30,
@@ -70,50 +89,46 @@
 		"lastBlockCheckRate": 1
 	},
 	"payments": {
-		"enabled": false,
+		"enabled": true,
 		"interval": 300,
 		"maxAddresses": 50,
-		"mixin": 1,
+		"mixin": 9,
 		"priority": 0,
 		"transferFee": 200,
 		"dynamicTransferFee": true,
 		"minerPayFee": true,
-		"minPayment": 10000,
+		"minPayment": 100000000000,
 		"maxTransactionAmount": 0,
-		"denomination": 1
+		"denomination": 100000000000
 	},
 
 	"blockUnlocker": {
 		"enabled": true,
 		"interval": 30,
-		"depth": 18,
-		"poolFee": 1.8,
-		"devDonation": 0.2
+		"depth": 60,
+		"poolFee": 0.5,
+		"devDonation": 0.0,
+		"extraFeaturesDevDonation":0.0
 	},
 
 	"api": {
 		"enabled": true,
 		"hashrateWindow": 600,
 		"updateInterval": 3, 
-		"port": 8118, 
+		"port": 8117, 
 		"blocks": 30, 
 		"payments": 30,
-		"password": "your_password",
-		"ssl": false, 
-		"sslPort": 8119,
-		"sslCert": "./cert.pem",
-		"sslKey": "./privkey.pem", 
-		"sslCA": "./chain.pem", 
+		"password": "kiki6969",
 		"trustProxyIP": false 
 	},
 	"daemon": {
-		"host": "daemon.xtlpool.com",
-		"port": 10188
+		"host": "18.221.222.198",
+		"port": 17750
 	},
 
 	"wallet": {
-		"host": "wallet.xtlpool.com",
-		"port": 8082
+		"host": "18.221.222.198",
+		"port": 17752
 	},
 
 	"redis": {
@@ -213,4 +228,4 @@
 			}
 		}
 	}
-}
+} 
