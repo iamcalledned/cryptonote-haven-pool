@@ -103,6 +103,7 @@
     "api": {
         "enabled": true,
         "hashrateWindow": 600,
+        "bindip": 0.0.0.0,
         "updateInterval": 20,
         "port": 8118,
         "blocks": 30,
