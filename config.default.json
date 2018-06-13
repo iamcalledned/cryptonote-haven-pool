@@ -23,7 +23,7 @@
 		"blockRefreshInterval": 100,
 		"minerTimeout": 900
 	
-	},
+
 	 "ports": [
             {
                 "port": 3333,
