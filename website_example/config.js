@@ -1,13 +1,15 @@
-var api = "https://testnet.xtlpool.com";//or direct with 8117
-var poolHost = "stratum.xtlpool.com";
+var api = "http://18.188.40.30:8118";//or direct with 8117
+var poolHost = "18.188.40.30";
 
-var email = "support@xtlpool.com";
+var email = "iamcalledned@gmail.com";
 var telegram = "";
-var discord = "https://discord.gg/zng9k2D";
+var discord = "";
 
 var marketCurrencies = ["{symbol}-BTC", "{symbol}-USD", "{symbol}-EUR", "{symbol}-CAD"];
 
-var blockchainExplorer = "https://explorer.stellite.cash/search?value={id}";
-var transactionExplorer = "https://explorer.stellite.cash/search?value={id}";
+var blockchainExplorer = "http://explorer.havenprotocol.com/block/{id}";
+
+var transactionExplorer = "http://explorer.havenprotocol.com/tx/{id}";
+
 
 var themeCss = "themes/stellite.css";
