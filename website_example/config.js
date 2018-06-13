@@ -12,4 +12,4 @@ var blockchainExplorer = "http://explorer.havenprotocol.com/block/{id}";
 var transactionExplorer = "http://explorer.havenprotocol.com/tx/{id}";
 
 
-var themeCss = "themes/stellite.css";
+var themeCss = "themes/default-theme.css";
